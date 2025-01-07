@@ -7,11 +7,11 @@ import dotenv from "dotenv"
 dotenv.config();
 export const AppDataSource = new DataSource({
     type: "postgres",
-    host:process.env.HOST_DB,
-    port:5433,
-    username:process.env.USERNAME_DB,
-    password:process.env.PASSWORD_DB,
-    database:process.env.DATABASE,
+    host:process.env.HOST_DBR,
+    port:Number(process.env.PORT_DBR),
+    username:process.env.USERNAME_DBR,
+    password:process.env.PASSWORD_DBR,
+    database:process.env.DATABASER,
    // dropSchema:true,
     synchronize: true,
     logging: false,
